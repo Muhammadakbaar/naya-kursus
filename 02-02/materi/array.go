@@ -19,7 +19,7 @@ func getArray() {
 }
 func perulanganArray() {
 
-	var mengulangArray = []string{"satu", "dua", "tiga"}
+	var mengulangArray = [3]string{"satu", "dua", "tiga"}
 	for i, ulang := range mengulangArray {
 		fmt.Println("isinya", i, ulang)
 
@@ -29,7 +29,14 @@ func perulanganArray() {
 	}
 
 }
+func arrayTitikTiga() {
+	var anu = [3][4]int{{2, 3, 4}, {3, 5, 6, 7}, {1}}
+	fmt.Println(anu)
+	fmt.Println(anu[1][2])
+
+}
 func main() {
 	getArray()
 	perulanganArray()
+	arrayTitikTiga()
 }
