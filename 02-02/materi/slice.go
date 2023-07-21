@@ -11,6 +11,7 @@ func cobaSlice() {
 	fmt.Println(cap(anu1))
 	anubarulagi := anu1[0:3]
 	fmt.Println(cap(anubarulagi))
+
 }
 func main() {
 	cobaSlice()
